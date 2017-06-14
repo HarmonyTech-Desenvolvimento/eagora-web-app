@@ -43,8 +43,8 @@ body {
 
 .content__heading {
   margin-bottom: 24px;
-  color: #272727;
-  font-size: 44px;
+  color: #ffffff59;
+  font-size: 150px;
 }
 
 .content__teaser {
@@ -54,14 +54,37 @@ body {
 }
 
 .content__cta {
-  display: inline-block;
+  display: ILI;
   margin: 0;
-  padding: 12px 48px;
-  color: #ff3c64;
+  padding: 15px 48px;
+  color: #2980b9;
+  font-weight: bold;
   font-size: 22px;
   text-decoration: none;
-  border: solid 4px #ff3c64;
+  border: solid 5px #2980b9;
 }
+
+/* =============================================================================
+  IMAGE BUTTON PLAY STORE
+============================================================================= */
+
+.image_button{
+  position:fixed;
+  width:60px;
+  z-index: 2;
+  margin: 0 auto;
+  height:60px;
+  bottom:0px;
+  right:75px;
+  border-radius:50px;
+}
+
+.image_button_image{
+  width:125px;
+  height:45px;
+}
+
+
 
 /* =============================================================================
   VIDEO
