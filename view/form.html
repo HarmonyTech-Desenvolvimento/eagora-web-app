@@ -6,6 +6,9 @@
   <title>E agora?</title>
   <meta name="description" content="Full screen background video demo">
   <meta name="author" description="Call Me Nick">
+
+  <script language="JavaScript" type="text/javascript" src="../js/MascaraValidacao.js"></script>
+
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oxygen:400,300,700">
   <link rel="stylesheet" href="css/style.css">
   <!-- Última versão CSS compilada e minificada -->
@@ -16,115 +19,115 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
-  <form class="form-horizontal">
-  <fieldset>
+  <form name="form1" class="form-horizontal">
+    <fieldset>
 
-  <!-- Form Name -->
-  <legend>Cadastro de serviço</legend>
+    <!-- Form Name -->
+    <legend>Cadastro de serviço</legend>
 
-  <!-- Select Basic -->
-  <div class="form-group">
-    <label class="col-md-4 control-label" for="idCategoria">Categoria</label>
-    <div class="col-md-5">
-      <select id="idCategoria" name="idCategoria" class="form-control">
-        <option value="1">Animais</option>
-        <option value="2">Arte e Cultura</option>
-        <option value="3">Assistência Técnica</option>
-        <option value="4">Aulas</option>
-        <option value="5">Autos</option>
-        <option value="6">Beleza e Estética</option>
-        <option value="7">Construção e Reforma</option>
-        <option value="8">Consultoria</option>
-        <option value="9">Desing e Tecnologia</option>
-        <option value="10">Eventos</option>
-        <option value="11">Saúde</option>
-        <option value="12">Serviços Domésticos</option>
-      </select>
+    <!-- Select Basic -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="idCategoria">Categoria</label>
+      <div class="col-md-5">
+        <select id="idCategoria" name="idCategoria" class="form-control">
+          <option value="1">Animais</option>
+          <option value="2">Arte e Cultura</option>
+          <option value="3">Assistência Técnica</option>
+          <option value="4">Aulas</option>
+          <option value="5">Autos</option>
+          <option value="6">Beleza e Estética</option>
+          <option value="7">Construção e Reforma</option>
+          <option value="8">Consultoria</option>
+          <option value="9">Desing e Tecnologia</option>
+          <option value="10">Eventos</option>
+          <option value="11">Saúde</option>
+          <option value="12">Serviços Domésticos</option>
+        </select>
+      </div>
     </div>
-  </div>
 
-  <!-- Select Basic -->
-  <div class="form-group">
-    <label class="col-md-4 control-label" for="idEspecialidade">Especialidade</label>
-    <div class="col-md-5">
-      <select id="idEspecialidade" name="idEspecialidade" class="form-control">
-        <option value="1">Animais</option>
-        <option value="2">Arte e Cultura</option>
-        <option value="3">Assistência Técnica</option>
-        <option value="4">Aulas</option>
-        <option value="5">Autos</option>
-        <option value="6">Beleza e Estética</option>
-        <option value="7">Construção e Reforma</option>
-        <option value="8">Consultoria</option>
-        <option value="9">Desing e Tecnologia</option>
-        <option value="10">Eventos</option>
-        <option value="11">Saúde</option>
-        <option value="12">Serviços Domésticos</option>
-      </select>
+    <!-- Select Basic -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="idEspecialidade">Especialidade</label>
+      <div class="col-md-5">
+        <select id="idEspecialidade" name="idEspecialidade" class="form-control">
+          <option value="1">Animais</option>
+          <option value="2">Arte e Cultura</option>
+          <option value="3">Assistência Técnica</option>
+          <option value="4">Aulas</option>
+          <option value="5">Autos</option>
+          <option value="6">Beleza e Estética</option>
+          <option value="7">Construção e Reforma</option>
+          <option value="8">Consultoria</option>
+          <option value="9">Desing e Tecnologia</option>
+          <option value="10">Eventos</option>
+          <option value="11">Saúde</option>
+          <option value="12">Serviços Domésticos</option>
+        </select>
+      </div>
     </div>
-  </div>
 
-  <!-- Text input-->
-  <div class="form-group">
-    <label class="col-md-4 control-label" for="idNome">Nome</label>  
-    <div class="col-md-5">
-    <input id="idNome" name="idNome" type="text" placeholder="Nome do prestador" class="form-control input-md" required="">
-      
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="idNome">Nome</label>  
+      <div class="col-md-5">
+      <input id="idNome" name="idNome" type="text" placeholder="Nome do prestador" class="form-control input-md" required="true">
+        
+      </div>
     </div>
-  </div>
 
-  <!-- Text input-->
-  <div class="form-group">
-    <label class="col-md-4 control-label" for="idCPF">CPF</label>  
-    <div class="col-md-5">
-    <input id="idCPF" name="idCPF" type="text" placeholder="CPF do prestador" class="form-control input-md" required="">    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="idCPF">CPF</label>  
+      <div class="col-md-5">
+      <input id="idCPF" name="idCPF" type="text" placeholder="CPF do prestador" class="form-control input-md" required="true" onBlur="ValidarCPF(form1.idCPF);" onKeyPress="MascaraCPF(form1.idCPF);" maxlength="14">    
+      </div>
     </div>
-  </div>
 
-  <!-- Text input-->
-  <div class="form-group">
-    <label class="col-md-4 control-label" for="idTelefone">Telefone</label>  
-    <div class="col-md-5">
-    <input id="idTelefone" name="idTelefone" type="text" placeholder="Telefone do Prestador" class="form-control input-md" required="">    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="idTelefone">Telefone</label>  
+      <div class="col-md-5">
+      <input id="idTelefone" name="idTelefone" type="text" placeholder="Telefone do Prestador" class="form-control input-md" required="true" onKeyPress="MascaraTelefone(form1.idTelefone);" maxlength="15"
+      onBlur="ValidaTelefone(form1.idTelefone);">    
+      </div>
     </div>
-  </div>
 
-  <!-- Text input-->
-  <div class="form-group">
-    <label class="col-md-4 control-label" for="idEmail">Email</label>  
-    <div class="col-md-5">
-    <input id="idEmail" name="idEmail" type="text" placeholder="Email do Prestador" class="form-control input-md" required="">    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="idEmail">Email</label>  
+      <div class="col-md-5">
+      <input id="idEmail" name="idEmail" type="email" placeholder="Email do Prestador" class="form-control input-md" required="true">    
+      </div>
     </div>
-  </div>
 
-
-  <!-- Text input-->
-  <div class="form-group">
-    <label class="col-md-4 control-label" for="idDataNasc">Data de Nascimento</label>  
-    <div class="col-md-5">
-    <input id="idDataNasc" name="idDataNasc" type="text" placeholder="Data de Nascimento do Prestador" class="form-control input-md" required="">    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="idDataNasc">Data de Nascimento</label>  
+      <div class="col-md-5">
+      <input id="idDataNasc" name="idDataNasc" type="text" placeholder="Data de Nascimento do Prestador" class="form-control input-md" required="true" onKeyPress="MascaraData(form1.idDataNasc);" maxlength="10" 
+      onBlur= "ValidaData(form1.idDataNasc);">    
+      </div>
     </div>
-  </div>
 
-  <!-- Text input-->
-  <div class="form-group">
-    <label class="col-md-4 control-label" for="idDataNasc">CEP</label>  
-    <div class="col-md-5">
-    <input id="idCEP" name="idCEP" type="text" placeholder="CEP do Prestador" class="form-control input-md" required="">    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="idDataNasc">CEP</label>  
+      <div class="col-md-5">
+      <input id="idCEP" name="idCEP" type="text" placeholder="CEP do Prestador" class="form-control input-md" required="true" onKeyPress="MascaraCep(form1.idCEP);" maxlength="9" onBlur="ValidaCep(form1.idCEP)">    
+      </div>
     </div>
-  </div>
 
-
-  <!-- Button (Double) -->
-  <div class="form-group">
-    <label class="col-md-4 control-label" for="idConfirmar"></label>
-    <div class="col-md-8">
-      <button id="idConfirmar" name="idConfirmar" class="btn btn-primary">confirmar</button>
-      <button id="idCancelar" name="idCancelar" class="btn btn-danger">Cancelar</button>
+    <!-- Button (Double) -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="idConfirmar"></label>
+      <div class="col-md-8">
+        <button id="idConfirmar" name="idConfirmar" class="btn btn-primary">Confirmar</button>
+        <button id="idCancelar" name="idCancelar" class="btn btn-danger">Cancelar</button>
+      </div>
     </div>
-  </div>
 
-  </fieldset>
+    </fieldset>
   </form>
 
 </body>
