@@ -43,13 +43,14 @@ body {
 
 .content__heading {
   margin-bottom: 24px;
-  color: #ffffff59;
+  opacity: 0.5;
+  color: #ffffff;
   font-size: 150px;
 }
 
 .content__teaser {
   margin-bottom: 24px;
-  color: #595959;
+  color: #ffffff;
   font-size: 22px;
 }
 
