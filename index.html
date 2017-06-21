@@ -8,23 +8,169 @@
   <meta name="author" description="HarmonyTech">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oxygen:400,300,700">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Última versão CSS compilada e minificada -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Tema opcional -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Última versão JavaScript compilada e minificada -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Our Custom CSS -->
+  <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-  
-<div class="content">
-  <h1 class="content__heading">E agora?</h1>
-  <a href="view/form.html" class="content__cta">Cadastrar Serviço</a>
-</div><!-- /content -->
 
-<div class="image_button">
-  <input class="image_button_image" type="image" src="img/eagora_play_store.png" alt="Submit">
-</div>
+<div class="wrapper">
+    <!-- Sidebar Holder -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Categorias</h3>
+        </div>
 
-<video id="my-video" class="video" muted loop>
-  <source src="media/eagora_web.mp4" type="video/mp4">
-  <source src="media/eagora_web.ogv" type="video/ogg">
-  <source src="media/eagora_web.webm" type="video/webm">
-</video><!-- /video -->
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="#animaisSubmenu" data-toggle="collapse" aria-expanded="false">Animais</a>
+                <ul class="collapse list-unstyled" id="animaisSubmenu">
+                    <li><a href="#">Home 1</a></li>
+                    <li><a href="#">Home 2</a></li>
+                    <li><a href="#">Home 3</a></li>
+                </ul>
+            </li>
+            <li class="active">
+                <a href="#arteSubmenu" data-toggle="collapse" aria-expanded="false">Arte e Cultura</a>
+                <ul class="collapse list-unstyled" id="arteSubmenu">
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </li>
+            <li class="active">
+                <a href="#assitenciaSubmenu" data-toggle="collapse" aria-expanded="false">Assistência Técnica</a>
+                <ul class="collapse list-unstyled" id="assitenciaSubmenu">
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </li>
+            <li class="active">
+                <a href="#aulasSubmenu" data-toggle="collapse" aria-expanded="false">Aulas</a>
+                <ul class="collapse list-unstyled" id="aulasSubmenu">
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </li>   
+            <li class="active">
+                <a href="#autosSubmenu" data-toggle="collapse" aria-expanded="false">Autos</a>
+                <ul class="collapse list-unstyled" id="autosSubmenu">
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </li> 
+             <li class="active">
+                <a href="#belezaSubmenu" data-toggle="collapse" aria-expanded="false">Beleza e Estética</a>
+                <ul class="collapse list-unstyled" id="belezaSubmenu">
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </li>   
+             <li class="active">
+                <a href="#construcaoSubmenu" data-toggle="collapse" aria-expanded="false">Costrução e Reformas</a>
+                <ul class="collapse list-unstyled" id="construcaoSubmenu">
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </li>   
+             <li class="active">
+                <a href="#consultoriaSubmenu" data-toggle="collapse" aria-expanded="false">Consultoria</a>
+                <ul class="collapse list-unstyled" id="consultoriaSubmenu">
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </li>   
+             <li class="active">
+                <a href="#desingSubmenu" data-toggle="collapse" aria-expanded="false">Desing e Tecnologia</a>
+                <ul class="collapse list-unstyled" id="desingSubmenu">
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </li>   
+             <li class="active">
+                <a href="#eventosSubmenu" data-toggle="collapse" aria-expanded="false">Eventos</a>
+                <ul class="collapse list-unstyled" id="eventosSubmenu">
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </li>   
+             <li class="active">
+                <a href="#saudeSubmenu" data-toggle="collapse" aria-expanded="false">Saúde</a>
+                <ul class="collapse list-unstyled" id="saudeSubmenu">
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </li>   
+             <li class="active">
+                <a href="#servicosSubmenu" data-toggle="collapse" aria-expanded="false">Serviços Domésticos</a>
+                <ul class="collapse list-unstyled" id="servicosSubmenu">
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </li>   
+        </ul>        
+    </nav>
+
+    <!-- Page Content Holder -->
+    <div id="content">
+        <nav class="navbar navbar-header">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                        <i class="glyphicon glyphicon-align-left"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>        
+    </div>
+
+    
+          <div class="cont">
+            <h1 class="cont__heading">E agora?</h1>
+            <a href="view/form.html" class="cont__cta">Cadastrar Serviço</a>
+          </div><!-- /cont -->
+
+          <div class="image_button">
+            <input class="image_button_image" type="image" src="img/eagora_play_store.png" alt="Submit">
+          </div>
+
+          <video id="my-video" class="video" muted loop>
+            <source src="media/eagora_web.mp4" type="video/mp4">
+            <source src="media/eagora_web.ogv" type="video/ogg">
+            <source src="media/eagora_web.webm" type="video/webm">
+        </video><!-- /video --> 
+         
+    
+
+ 
+
+
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<!-- Bootstrap Js CDN -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- jQuery Nicescroll CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
 
 <script>
 (function() {
@@ -41,6 +187,20 @@
     video.play();
   });
 })();
+
+$(document).ready(function () {
+                 $("#sidebar").niceScroll({
+                     cursorcolor: '#53619d',
+                     cursorwidth: 4,
+                     cursorborder: 'none'
+                 });
+
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar, #content').toggleClass('active');
+                     $('.collapse.in').toggleClass('in');
+                     $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                 });
+             });
 </script>
 
 </body>
