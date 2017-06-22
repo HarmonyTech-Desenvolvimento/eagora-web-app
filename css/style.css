@@ -27,8 +27,7 @@ a, a:hover, a:focus {
     padding: 10px 1px;
     border: none;
     border-radius: 0;
-
-  z-index: 2;
+    z-index: 2;
     margin-bottom: 40px;
 }
 
@@ -55,7 +54,7 @@ a, a:hover, a:focus {
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: #7386D5;
+    background: #3498db;
     color: #fff;
     transition: all 0.3s;
 }
@@ -66,12 +65,13 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #2980b9;
+    text-align: center;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    border-bottom: 1px solid #3498db;
 }
 
 #sidebar ul p {
@@ -85,13 +85,13 @@ a, a:hover, a:focus {
     display: block;
 }
 #sidebar ul li a:hover {
-    color: #7386D5;
+    color: #3498db;
     background: #fff;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
-    background: #6d7fcc;
+    background: #3498db;
 }
 
 
@@ -115,7 +115,7 @@ a[aria-expanded="true"]::before {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: #3498db;
 }
 
 ul.CTAs {
@@ -178,6 +178,44 @@ a.article, a.article:hover {
     }
 }
 
+
+.cont__heading {
+    font-size: 150px;
+}
+
+.cont__cta{
+    padding: 15px 48px;
+}
+@media all and (max-device-width: 720px){
+    .cont__heading {
+        font-size: 110px;
+    }
+
+    .cont__cta{
+      padding: 11px 36px;
+    }
+}
+
+@media all and (max-device-width: 640px){
+    .cont__heading {
+        font-size: 80px;
+    }
+
+    .cont__cta{
+      padding: 9px 30px;
+    }
+}
+
+@media all and (max-device-width: 320px){
+    .cont__heading {
+        font-size: 50px;
+    }
+
+    .cont__cta{
+      padding: 5px 20px;
+    } 
+}
+
 .cont {
   position: relative;
   margin-top: 30%;
@@ -193,7 +231,6 @@ a.article, a.article:hover {
   opacity: 0.5;
   color: #ffffff;
   text-align: center;
-  font-size: 150px;
 }
 
 .cont__teaser {
@@ -205,7 +242,6 @@ a.article, a.article:hover {
 .cont__cta {
   display: ILI;
   margin: 0;
-  padding: 15px 48px;
   color: #2980b9;
   font-weight: bold;
   font-size: 22px;
@@ -232,7 +268,6 @@ a.article, a.article:hover {
   width:125px;
   height:45px;
 }
-
 
 
 /* =============================================================================
