@@ -7,23 +7,6 @@
   <meta name="description" content="Full screen background video demo">
   <meta name="author" description="Call Me Nick">
 
-  <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyDpWFgOQcdzjI1JVhATYAyGzIcI7XQCvTg",
-        authDomain: "eagora-be6d1.firebaseapp.com",
-        databaseURL: "https://eagora-be6d1.firebaseio.com",
-        projectId: "eagora-be6d1",
-        storageBucket: "eagora-be6d1.appspot.com",
-        messagingSenderId: "653607309132"
-      };
-      firebase.initializeApp(config);
-
-      // Get a reference to the database service
-      var database = firebase.database();
-  </script>
-
   <script language="JavaScript" type="text/javascript" src="../js/MascaraValidacao.js"></script>
   <script language="JavaScript" type="text/javascript" src="../js/firebaseHelper.js"></script>
 
@@ -38,7 +21,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
-  <form name="formCadastro" class="form-horizontal" action="" method="POST">
+  <form name="formCadastro" class="form-horizontal" action="cadastro.php" method="POST">
     <fieldset>
 
     <!-- Form Name -->
@@ -149,76 +132,5 @@
 
     </fieldset>
   </form>
-  
-  <script>
-    (function(){
-    /*//just make a variable to keep track of the data coming from Firebase
-    var data =[];
-    
-    //create a new connection to firebase
-    var ref = new Firebase('https://seneca-activs.firebaseio.com/activities');
-    
-    //listen to data updates from firebase
-    ref.on("value", function(snapshot){
-      console.log(snapshot.val() );
-      //when data updates at Firebase, put it in the data variable
-      data = snapshot.val();
-    })*/
-
-    //$('#sendData').submit(function(event){
-      /*var $form = $(this);
-      console.log("submit to Firebase");
-
-      //make the submit disabled
-      $form.find("#saveForm").prop('disabled', true);
-
-      //get the actual values that we will send to firebase
-      var titleToSend = $('#activityTitle').val();
-
-      console.log(titleToSend);
-
-      var descriptionToSend = $('#activityDescription').val();
-
-      console.log(descriptionToSend);
-
-      var categoryToSend = $('#activityCatagory').val();
-
-      console.log(categoryToSend);
-      
-      //take the values from the form, and put them in an object
-      var newActivity = {
-        "description": descriptionToSend,
-        "title":titleToSend,
-        "type": categoryToSend
-      }
-      //put the new object into the data array
-      data.push(newActivity);
-      console.log(data);
-      //send the new data to Firebase
-      ref.set(data);
-
-      return false;*/
-
-      var sendDataFirebase = document.getElementById("idConfirmar");
-
-      sendDataFirebase.addEventListener( "click", function() {
-        //video.play();
-
-        firebase.database().ref('users/' + "123").set({
-          username: "teste",
-          email: "teste",
-          profile_picture : "teste"
-        });
-
-      var my_javascript_variable = <?php echo $_POST['idNome'] ?>;
-
-      console.log(data);
-
-      });
-
-    //})
-  })();
-  </script>
-
 </body>
 </html>
