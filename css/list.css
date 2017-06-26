@@ -19,7 +19,7 @@ body {
 html {
   position: relative;
   overflow-x: hidden;
-  margin: 16px;
+  margin: 5px;
   padding: 0;
   min-height: 100%;
   font-size: 62.5%;
@@ -88,6 +88,14 @@ a, a:hover, a:focus {
     padding: 20px;
     background: #2980b9;
     text-align: center;
+}
+
+#sidebar .sidebar-header-cat {
+    padding: 1px;
+    background: #2980b9;
+    text-align: center;
+    font-size: 10000px;
+    margin-top: -15px;
 }
 
 #sidebar ul.components {
@@ -174,8 +182,6 @@ a.article, a.article:hover {
 #content.active {
     width: 100%;
 }
-
-
 
 
 /* ---------------------------------------------------
