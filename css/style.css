@@ -178,17 +178,24 @@ a.article, a.article:hover {
     }
 }
 
+.cont{
+  margin-top: -300px;
+}
 
 .cont__heading {
-    font-size: 150px;
+    font-size: 140px;
 }
 
 .cont__cta{
     padding: 15px 48px;
 }
 @media all and (max-device-width: 720px){
+    .cont{
+      margin-top: -250px;
+    }
+
     .cont__heading {
-        font-size: 110px;
+        font-size: 100px;
     }
 
     .cont__cta{
@@ -197,16 +204,28 @@ a.article, a.article:hover {
 }
 
 @media all and (max-device-width: 640px){
+    .cont{
+      margin-top: -200px;
+    }
+
     .cont__heading {
-        font-size: 80px;
+        font-size: 70px;
+    }
+
+    .cont__cta{
+      padding: 9px 29px;
     }
 
     
 }
 
 @media all and (max-device-width: 320px){
+    .cont{
+      margin-top: -100px;
+    }
+
     .cont__heading {
-        font-size: 50px;
+        font-size: 45px;
     }
 
     .cont__cta{
@@ -218,7 +237,6 @@ a.article, a.article:hover {
   position:relative;
   z-index: 2;
   text-align: center;
-  margin-top: -400px;
   top: 50%;
   transform: translateY(-50%);
 
