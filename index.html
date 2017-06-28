@@ -114,7 +114,42 @@
     </div>-->
 
     
-  <div class="cont">
+  
+
+  <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <li data-target="#bs-carousel" data-slide-to="2"></li>
+    <li data-target="#bs-carousel" data-slide-to="3"></li>
+    <li data-target="#bs-carousel" data-slide-to="4"></li>
+  </ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-1"></div>
+    </div>
+    <div class="item slides">
+      <div class="slide-2"></div>
+    </div>
+    <div class="item slides">
+      <div class="slide-3"></div>      
+    </div>
+    <div class="item slides">
+      <div class="slide-4"></div>
+    </div>
+    <div class="item slides">
+      <div class="slide-5"></div>
+    </div>
+  </div> 
+</div>
+
+<div class="cont">
     <h1 class="cont__heading">E agora?</h1>
     <a href="view/form.html" class="cont__cta">Cadastrar Serviço</a>
   </div><!-- /cont -->
@@ -124,12 +159,6 @@
     <input class="image_button_image" type="image" src="img/eagora_play_store.png" alt="Submit">
   </a>
   </div>
-
-  <video id="my-video" class="video" muted loop>
-    <!--<source src="media/eagora_web.mp4" type="video/mp4">
-    <source src="media/eagora_web.ogv" type="video/ogg">-->
-    <source src="media/eagora_web.webm" type="video/webm">
-  </video><!-- /video --> 
 
 <!-- jQuery CDN --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -141,21 +170,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <script>
-(function() {
-  /**
-   * Video element
-   * @type {HTMLElement}
-   */
-  var video = document.getElementById("my-video");
-
-  /**
-   * Check if video can play, and play it
-   */
-  video.addEventListener( "canplay", function() {
-    video.play();
-  });
-})();
-
 $(document).ready(function () {
                  $("#sidebar").niceScroll({
                      cursorcolor: '#53619d',
