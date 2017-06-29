@@ -1,8 +1,4 @@
-/*
-    DEMO STYLE
-*/
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -150,93 +146,20 @@ a.article, a.article:hover {
     top: 0;
     right: 0;
 }
+
 #content.active {
     width: 100%;
 }
 
 
-
-
-/* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #content {
-        width: 100%;
-    }
-    #content.active {
-        width: calc(100% - 250px);
-    }
-    #sidebarCollapse span {
-        display: none;
-    }
-}
-
-.cont{
-  margin-top: -300px;
-}
-
-.cont__heading {
-    font-size: 140px;
-}
-
-.cont__cta{
-    padding: 15px 48px;
-}
-@media all and (max-device-width: 720px){
-    .cont{
-      margin-top: -250px;
-    }
-
-    .cont__heading {
-        font-size: 100px;
-    }
-
-    .cont__cta{
-      padding: 11px 36px;
-    }
-}
-
-@media all and (max-device-width: 640px){
-    .cont{
-      margin-top: -200px;
-    }
-
-    .cont__heading {
-        font-size: 70px;
-    }
-
-    .cont__cta{
-      padding: 9px 29px;
-    }
-
-    
-}
-
-@media all and (max-device-width: 320px){
-    .cont{
-      margin-top: -100px;
-    }
-
-    .cont__heading {
-        font-size: 45px;
-    }
-
-    .cont__cta{
-      padding: 5px 20px;
-    } 
-}
-
+/* =============================================================================
+  E AGORA? E CADASTRAR SERVIÇO 
+============================================================================= */
 .cont {
   position:relative;
   z-index: 2;
   text-align: center;
+  margin-top: -400px;
   top: 50%;
   transform: translateY(-50%);
 
@@ -270,27 +193,9 @@ a.article, a.article:hover {
   width:60px;
   z-index: 2;
   margin: 0 auto;
-  height:60px;
-  bottom:0px;
-  right:75px;
+  height:60px;  
   border-radius:50px;
 }
-
-.image_button_image{
-  width:125px;
-  height:45px;
-}
-
-
-/* =============================================================================
-  VIDEO
-============================================================================= */
-
-    /*
-Fade content bs-carousel with hero headers
-Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
-Image credits: unsplash.com
-*/
 
 /********************************/
 /*       Fade Bs-carousel       */
@@ -311,47 +216,6 @@ Image credits: unsplash.com
 .fade-carousel .carousel-indicators > li.active {
   width: 10px;
   height: 10px;
-}
-
-/********************************/
-/*          Hero Headers        */
-/********************************/
-.hero {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
-      -webkit-transform: translate3d(-50%,-50%,0);
-         -moz-transform: translate3d(-50%,-50%,0);
-          -ms-transform: translate3d(-50%,-50%,0);
-           -o-transform: translate3d(-50%,-50%,0);
-              transform: translate3d(-50%,-50%,0);
-}
-.hero h1 {
-    font-size: 6em;    
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-}
-
-.fade-carousel .carousel-inner .item .hero {
-    opacity: 0;
-    -webkit-transition: 2s all ease-in-out .1s;
-       -moz-transition: 2s all ease-in-out .1s; 
-        -ms-transition: 2s all ease-in-out .1s; 
-         -o-transition: 2s all ease-in-out .1s; 
-            transition: 2s all ease-in-out .1s; 
-}
-.fade-carousel .carousel-inner .item.active .hero {
-    opacity: 1;
-    -webkit-transition: 2s all ease-in-out .1s;
-       -moz-transition: 2s all ease-in-out .1s; 
-        -ms-transition: 2s all ease-in-out .1s; 
-         -o-transition: 2s all ease-in-out .1s; 
-            transition: 2s all ease-in-out .1s;    
 }
 
 /********************************/
@@ -418,3 +282,122 @@ Image credits: unsplash.com
 @media screen and (max-width: 640px){
     .hero h1 { font-size: 4em; }    
 }
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+.cont{
+  margin-top: -400px;
+}
+
+.cont__heading {
+    font-size: 150px;
+}
+
+.cont__cta{
+    padding: 15px 48px;
+}
+
+.image_button{
+    bottom:0px;
+    right:75px;
+}
+
+.image_button_image{
+  width:125px;
+  height:45px;
+}
+
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 250px);
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+
+@media all and (max-device-width: 720px){
+    .cont{
+      margin-top: -350px;
+    }
+
+    .cont__heading {
+        font-size: 110px;
+    }
+
+    .cont__cta{
+      padding: 11px 36px;
+    }
+
+    .image_button_image{
+      width:111px;
+      height:40px;
+    }
+
+    .image_button{
+      bottom: 0px;
+      right:55px;
+    }
+}
+
+@media all and (max-device-width: 640px){
+    .cont{
+      margin-top: -300px;
+    }
+
+    .cont__heading {
+        font-size: 80px;
+    }
+
+    .cont__cta{
+      padding: 9px 29px;
+    }
+
+    .image_button_image{
+      width:100px;
+      height:34px;
+    }
+
+    .image_button{
+      bottom: 0px;
+      right:40px;
+    }  
+}
+
+@media all and (max-device-width: 320px){
+    .cont{
+      margin-top: -220px;
+    }
+
+    .cont__heading {
+        font-size: 50px;
+    }
+
+    .cont__cta{
+      padding: 5px 20px;
+    }
+
+    .image_button_image{
+      width:90px;
+      height:29px;
+    }
+
+    .image_button{
+      bottom:0 px;
+      right:35px;
+    }
+}
+
