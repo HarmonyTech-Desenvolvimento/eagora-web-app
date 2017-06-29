@@ -209,8 +209,8 @@ a.article, a.article:hover {
 }
 .fade-carousel .carousel-indicators > li {
     margin: 0 2px;
-    background-color: #f39c12;
-    border-color: #f39c12;
+    background-color: #3498db;
+    border-color: #2980b9;
     opacity: .7;
 }
 .fade-carousel .carousel-indicators > li.active {
@@ -226,8 +226,9 @@ a.article, a.article:hover {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: #080d15;
-    opacity: .7;
+    opacity: 0.9;
+    background-color: #080d00;
+    opacity: .3;
 }
 
 /********************************/

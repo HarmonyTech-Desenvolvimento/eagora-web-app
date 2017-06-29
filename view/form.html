@@ -20,12 +20,16 @@
   <!-- Última versão JavaScript compilada e minificada -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
-<body>
+<body style="background-color: #ecf0f1">
+<div class="teste">
+  <!-- Form Name -->
+    <p>Cadastro de serviço</p>
+</div>
+
   <form name="formCadastro" class="form-horizontal" action="cadastro.php" method="POST">
     <fieldset>
 
-    <!-- Form Name -->
-    <legend>Cadastro de serviço</legend>
+    
 
     <!-- Select Basic -->
     <div class="form-group">
@@ -124,10 +128,9 @@
     <div class="form-group">
       <label class="col-md-4 control-label" for="idConfirmar"></label>
       <div class="col-md-8">
-        <button id="idConfirmar" name="idConfirmar" class="btn btn-primary" 
-        type="submit" value="sendData">Confirmar</button>
+        <button id="idConfirmar" name="idConfirmar" class="btn btn-primary" type="submit" value="sendData">Cadastrar Serviço</button>
         <a href="../index.html">
-          <button id="idCancelar" name="idCancelar" class="btn btn-danger">Cancelar</button>
+          <button id="idCancelar" name="idCancelar" class="btn btn-danger">Cancelar Cadastro</button>
         </a>
       </div>
     </div>
