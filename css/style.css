@@ -18,8 +18,6 @@ p {
 ============================================================================= */
 .logo{
   position: fixed;
-  width: 70px;
-  height: 70px;
   z-index: 2;
   margin-top: 1%;
   margin-left: 1%;
@@ -162,8 +160,13 @@ p {
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
+.logo{
+  width: 75px;
+  height: 75px;
+}
+
 .cont{
-  margin-top: -400px;
+  margin-top: -370px;
 }
 
 .cont__heading {
@@ -185,73 +188,88 @@ p {
 }
 
 @media all and (max-device-width: 720px){
-    .cont{
-      margin-top: -350px;
-    }
+  .logo{
+    width: 65px;
+    height:65px;
+  }
 
-    .cont__heading {
-        font-size: 110px;
-    }
+  .cont{
+    margin-top: -335px;
+  }
 
-    .cont__cta{
-      padding: 11px 36px;
-    }
+  .cont__heading {
+      font-size: 110px;
+  }
 
-    .image_button_image{
-      width:111px;
-      height:40px;
-    }
+  .cont__cta{
+    padding: 11px 36px;
+  }
 
-    .image_button{
-      bottom: 0px;
-      right:55px;
-    }
+  .image_button_image{
+    width:111px;
+    height:40px;
+  }
+
+  .image_button{
+    bottom: 0px;
+    right:60px;
+  }
 }
 
 @media all and (max-device-width: 640px){
-    .cont{
-      margin-top: -300px;
-    }
+  .logo{
+    width: 55px;
+    height: 55px;
+  }
 
-    .cont__heading {
-        font-size: 80px;
-    }
+  .cont{
+    margin-top: -275px;
+  }
 
-    .cont__cta{
-      padding: 9px 29px;
-    }
+  .cont__heading {
+      font-size: 80px;
+  }
 
-    .image_button_image{
-      width:100px;
-      height:34px;
-    }
+  .cont__cta{
+    padding: 9px 29px;
+  }
 
-    .image_button{
-      bottom: 0px;
-      right:40px;
-    }  
+  .image_button_image{
+    width:100px;
+    height:34px;
+  }
+
+  .image_button{
+    bottom: 0px;
+    right:50px;
+  }  
 }
 
 @media all and (max-device-width: 320px){
-    .cont{
-      margin-top: -220px;
-    }
+  .logo{
+    width: 45px;
+    height: 45px;
+  }
 
-    .cont__heading {
-        font-size: 50px;
-    }
+  .cont{
+    margin-top: -220px;
+  }
 
-    .cont__cta{
-      padding: 5px 20px;
-    }
+  .cont__heading {
+      font-size: 50px;
+  }
 
-    .image_button_image{
-      width:90px;
-      height:29px;
-    }
+  .cont__cta{
+    padding: 5px 20px;
+  }
 
-    .image_button{
-      bottom:0 px;
-      right:35px;
-    }
+  .image_button_image{
+    width:90px;
+    height:29px;
+  }
+
+  .image_button{
+    bottom:0 px;
+    right:40px;
+  }
 }
